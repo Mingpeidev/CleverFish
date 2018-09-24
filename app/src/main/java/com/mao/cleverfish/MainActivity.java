@@ -261,7 +261,7 @@ public class MainActivity extends AppCompatActivity {
                         jsonObject.put("watertime",watertime);
                         jsonObject.put("o2",o2time);
 
-                        SendOne(jsonObject.toString());//发送json
+                        SendOne(jsonObject.toString());//发送json到服务器
 
                         Log.d("json", "onClick: "+jsonObject.toString());
 
@@ -411,39 +411,6 @@ public class MainActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
 
-            }
-        });
-    }
-
-    private void Read(){
-
-        // 利用线程池直接开启一个线程 & 执行该线程
-        mThreadPool.execute(new Runnable() {
-            @Override
-            public void run() {
-                while (true) {
-
-                    try {
-                        // 步骤1：创建输入流对象InputStream
-                        is = socket.getInputStream();
-
-                        // 步骤2：创建输入流读取器对象 并传入输入流对象
-                        // 该对象作用：获取服务器返回的数据
-                        isr = new InputStreamReader(is);
-                        br = new BufferedReader(isr);
-
-                        // 步骤3：通过输入流读取器对象 接收服务器发送过来的数据
-                        response = br.readLine();
-
-                        // 步骤4:通知主线程,将接收的消息显示到界面
-
-                        Message msg = Message.obtain();
-                        msg.what = 0;
-                        mMainHandler.sendMessage(msg);
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
             }
         });
     }
