@@ -9,12 +9,19 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:textColor="#911515"
+        android:layout_height="1dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="22sp"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
         android:text="智能鱼缸控制系统"
-        android:background="#c4c3ba"
+        android:background="#5d80ff"
         android:gravity="center"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -25,7 +32,7 @@
             android:layout_height="match_parent"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:background="@drawable/background" />
+            android:background="@drawable/background1" />
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -143,9 +150,8 @@
         <TextView
             android:id="@+id/fishname_text"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="1sp"
             android:layout_weight="4"
-            android:text="鱼缸1    秋刀鱼 "
             android:textSize="24sp"
             android:textColor="#00000000"
             android:gravity="center"
@@ -153,13 +159,19 @@
     </LinearLayout>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="智能操控模块"/>
+        android:layout_width="match_parent"
+        android:layout_height="22sp"
+        android:text="智能操控模块"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:background="#5d80ff"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
        >
 
         <LinearLayout
@@ -236,13 +248,19 @@
     </LinearLayout>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="更多功能"/>
+        android:layout_width="match_parent"
+        android:layout_height="22sp"
+        android:text="更多功能"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:background="#5d80ff"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -315,4 +333,9 @@
                 android:layout_gravity="center" />
         </LinearLayout>
     </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#5d80ff"/>
 </LinearLayout>
